@@ -18,6 +18,9 @@
                     <x-nav-link :href="route('country-product')" :active="request()->routeIs('country-product')">
                         Country Product
                     </x-nav-link>
+                    <x-nav-link :href="route('create-order')" :active="request()->routeIs('create-order')">
+                        Create Order
+                    </x-nav-link>
                 </div>
             </div>
 

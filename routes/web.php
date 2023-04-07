@@ -20,6 +20,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::view('country-product', 'country-product')->name('country-product');
+Route::view('create-order', 'create-order')->name('create-order');
 
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 
