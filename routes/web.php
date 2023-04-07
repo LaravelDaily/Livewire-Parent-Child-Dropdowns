@@ -19,6 +19,8 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::view('country-product', 'country-product')->name('country-product');
+
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 
 Route::middleware('auth')->group(function () {
