@@ -21,6 +21,9 @@
                     <x-nav-link :href="route('create-order')" :active="request()->routeIs('create-order')">
                         Create Order
                     </x-nav-link>
+                    <x-nav-link :href="route('orders.index')" :active="request()->routeIs('orders.index')">
+                        Orders
+                    </x-nav-link>
                 </div>
             </div>
 

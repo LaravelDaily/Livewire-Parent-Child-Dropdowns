@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -21,6 +22,9 @@ Route::get('/', function () {
 
 Route::view('country-product', 'country-product')->name('country-product');
 Route::view('create-order', 'create-order')->name('create-order');
+
+Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
+Route::get('orders/{order}/edit', [OrderController::class, 'edit'])->name('orders.edit');
 
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 
