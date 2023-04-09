@@ -12,6 +12,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
+        <link rel="stylesheet" href="{{ asset('css/virtual-select.min.css') }}">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
     </head>
@@ -34,6 +35,8 @@
             </main>
         </div>
 
+        <script src="{{ asset('js/virtual-select.min.js') }}"></script>
         @livewireScripts
+        @stack('scripts')
     </body>
 </html>
