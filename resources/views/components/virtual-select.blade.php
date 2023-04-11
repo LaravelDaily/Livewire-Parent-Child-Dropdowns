@@ -15,9 +15,9 @@
                 return
             }
 
-            $wire.set('product', $refs.select.value)
+            $wire.set('{{ $attributes->whereStartsWith('wire:model')->first() }}', $refs.select.value)
         })
-        $watch('options', value => $refs.select.setOptions(options))
+        $watch('options', () => $refs.select.setOptions(options))
     ">
     <div x-ref="select" wire:ignore {{ $attributes }}></div>
 </div>

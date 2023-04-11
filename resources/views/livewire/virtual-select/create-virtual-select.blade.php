@@ -14,17 +14,6 @@
         <div class="mt-4">
             <label class="block text-sm font-medium text-gray-700" for="product"> Product* </label>
             <x-virtual-select id="product" name="product" wire:model="product" options="products" />
-            {{--<select wire:model="product" name="product"
-                    class="mt-2 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
-                @if($products->isEmpty())
-                    <option value="">-- choose category first --</option>
-                @else
-                    <option value="" selected>-- choose product --</option>
-                @endif
-                @foreach ($products as $product)
-                    <option value="{{ $product->id }}">{{ $product->name }}</option>
-                @endforeach
-            </select>--}}
         </div>
 
         <div class="mt-4">
