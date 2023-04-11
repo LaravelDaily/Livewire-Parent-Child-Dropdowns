@@ -27,6 +27,9 @@
                     <x-nav-link :href="route('virtual-select.index')" :active="request()->routeIs('virtual-select.index')">
                         Virtual Select Orders
                     </x-nav-link>
+                    <x-nav-link :href="route('tom-select.index')" :active="request()->routeIs('tom-select.index')">
+                        Tom Select Orders
+                    </x-nav-link>
                 </div>
             </div>
 

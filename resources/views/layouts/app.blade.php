@@ -13,6 +13,7 @@
 
         <!-- Scripts -->
         <link rel="stylesheet" href="{{ asset('css/virtual-select.min.css') }}">
+        <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
     </head>
@@ -36,6 +37,7 @@
         </div>
 
         <script src="{{ asset('js/virtual-select.min.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
         @livewireScripts
         @stack('scripts')
     </body>
